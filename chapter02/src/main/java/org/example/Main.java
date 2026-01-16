@@ -26,6 +26,8 @@ public class Main {
         p1.usePromotion();
         p1.usePromotion2();
 
+        TranslateType t1 = new TranslateType();
+        t1.useTranslate();
     }
 
 
