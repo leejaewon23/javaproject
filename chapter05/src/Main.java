@@ -1,4 +1,5 @@
 import java.lang.ref.Reference;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,7 +20,20 @@ public class Main {
         r1.ArrayLength();
         r1.ArrayMultidimensional();
         r1.ArrayMultidimensional2();
+
+        ArrayTest a1 = new ArrayTest();
+        a1.ArrayBoolean();
+        a1.ArrayInt();
+        a1.ArrayChar();
+        a1.ArrayBoolean1();
+        a1.ArrayString();
+        a1.ArraySquare();
+        a1.ArrayInputOutput();
+
+
     }
+
+
 
 
 }
