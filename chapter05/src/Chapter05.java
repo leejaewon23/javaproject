@@ -334,7 +334,7 @@ public class Chapter05 {
         englishScores[1][1] = 93;
         englishScores[1][2] = 94;
 
-        totalStudent1 = 0;
+
         int totalEnglishSum = 0;
         for(int i = 0; i < englishScores.length; i++) {
             totalEnglishSum += englishScores[i].length;
