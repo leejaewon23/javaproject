@@ -13,5 +13,13 @@ public class Main {
         r1.SubString();
         r1.IndexOf();
         r1.Split();
+        r1.ArrayCreate();
+        r1.ArrayCreate2();
+        r1.ArrayCreate3();
+        r1.ArrayLength();
+        r1.ArrayMultidimensional();
+        r1.ArrayMultidimensional2();
     }
+
+
 }
