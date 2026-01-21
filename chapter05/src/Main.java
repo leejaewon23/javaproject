@@ -30,10 +30,8 @@ public class Main {
         a1.ArraySquare();
         a1.ArrayInputOutput();
 
+        ArrayTest2 a2 = new ArrayTest2();
+        a2.ArrayDouble();
 
     }
-
-
-
-
 }
