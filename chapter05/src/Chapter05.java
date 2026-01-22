@@ -1,4 +1,6 @@
 import java.io.PrintStream;
+import java.util.Calendar;
+import java.util.Scanner;
 
 public class Chapter05 {
     public void ReFerence() {
@@ -345,5 +347,93 @@ public class Chapter05 {
         double totalEnglishAvg = (double) totalEnglishSum / totalStudent1;
         System.out.println("전체 학생의 영어 평균 점수: " +  totalEnglishAvg);
     }
+
+    public void ArrayReference() {
+        String[] strArray = new String[3];
+        strArray[0] = "Java";
+        strArray[1] = "Java";
+        strArray[2] = new String("Java");
+
+        System.out.println(strArray[0] == strArray[1]);
+        System.out.println(strArray[0] == strArray[2]);
+        System.out.println(strArray[0].equals(strArray[2]));
+    }
+
+    public void ArrayCopy() {
+        int[] oldIntArray = {1, 2, 3};
+        int[] newIntArray = new int[5];
+
+        for(int i = 0; i < oldIntArray.length; i++) {
+            newIntArray[i] = oldIntArray[i];
+        }
+        for(int i = 0; i < newIntArray.length; i++) {
+            System.out.print(newIntArray[i] + ", ");
+        }
+        System.out.println();
+    }
+
+    public void ArrayCopyExample() {
+        String[] oldStrArray = {"java", "array", "copy"};
+        String[] newStrArray = new String[5];
+        System.arraycopy(oldStrArray, 0, newStrArray, 0, oldStrArray.length);
+        for(int i = 0; i < newStrArray.length; i++) {
+            System.out.print(newStrArray[i] + ", ");
+        }
+        System.out.println();
+    }
+
+    public void AdvancedForExample() {
+        int[] scores = { 95, 71, 84, 93, 87};
+        int sum = 0;
+        for(int score : scores) {
+            sum += score;
+        }
+        System.out.println("점수 총합 = " +sum);
+
+        double avg = (double) sum / scores.length;
+        System.out.println("점수 평균 = " + avg);
+    }
+    // 이클립스 예제
+    /* public static  void main(String args[]) {
+        if(args.length != 2) {
+            System.out.println("프로그램 입력값이 부족");
+            System.exit(0);
+        }
+
+        String strNum1  = args[0];
+        String strNum2 = args[1];
+
+        int num1 = Integer.parseInt(strNum1);
+        int num2 = Integer.parseInt(strNum2);
+
+        int result = num1 + num2;
+        System.out.println(num1 + " + " + num2 + " = " + result);
+    } */
+
+    public void WeekExample() {
+        //Week 열거 타입 변수 선언
+        Week today = null;
+
+        Calendar cal = Calendar.getInstance();
+
+        int week = cal.get(Calendar.DAY_OF_WEEK);
+
+        switch (week) {
+            case 1: today = Week.SUNDAY; break;
+            case 2: today = Week.MONDAY; break;
+            case 3: today = Week.TUESDAY; break;
+            case 4: today = Week.WEDNESDAY; break;
+            case 5: today = Week.THURSDAY; break;
+            case 6: today = Week.FRIDAY; break;
+            case 7: today = Week.SATURDAY; break;
+        }
+
+        if(today == Week.THURSDAY) {
+            System.out.println("일요일에는 축구를 합니다.");
+        } else {
+            System.out.println("열심히 자바를 공부합니다.");
+        }
+    }
+
 
 }

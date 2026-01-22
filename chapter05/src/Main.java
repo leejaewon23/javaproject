@@ -20,6 +20,11 @@ public class Main {
         r1.ArrayLength();
         r1.ArrayMultidimensional();
         r1.ArrayMultidimensional2();
+        r1.ArrayReference();
+        r1.ArrayCopy();
+        r1.ArrayCopyExample();
+        r1.AdvancedForExample();
+        r1.WeekExample();
 
         ArrayTest a1 = new ArrayTest();
         a1.ArrayBoolean();

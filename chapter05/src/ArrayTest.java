@@ -40,8 +40,6 @@ public class ArrayTest {
                 boolArray1[i][j] = true;
                 System.out.print(boolArray1[i][j] + ", ");
             }
-            System.out.println();
-
         }
     }
 
