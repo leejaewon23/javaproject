@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class ArrayTest2 {
     // 배열 숙성 과제
     public void ArrayDouble() {
@@ -45,9 +46,48 @@ public class ArrayTest2 {
             }
             System.out.println();
         }
-        //2-2
+    }
+
+    //2-2
+    public void printSquare() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("숫자를 입력하세요: ");
+        int number = sc.nextInt();
+
         char[][] square = new char[number][number];
 
+        System.out.println(number + "행 " + number + "열");
+
+        for (int i = 0; i < number; i++) {
+            for (int j = 0; j < number; j++) {
+                // 1. 네 꼭짓점 처리
+                if (i == 0 && j == 0) {
+                    square[i][j] = '┌';
+                } else if (i == 0 && j == number - 1) {
+                    square[i][j] = '┐';
+                } else if (i == number - 1 && j == 0) {
+                    square[i][j] = '└';
+                } else if (i == number - 1 && j == number - 1) {
+                    square[i][j] = '┘';
+                }
+                // 2. 가로 테두리 (첫 번째 줄과 마지막 줄)
+                else if (i == 0 || i == number - 1) {
+                    square[i][j] = '─';
+                }
+                // 3. 세로 테두리 (첫 번째 열과 마지막 열)
+                else if (j == 0 || j == number - 1) {
+                    square[i][j] = '│';
+                }
+                // 4. 내부 공간
+                else {
+                    square[i][j] = ' ';
+                }
+
+                // 대입된 문자 출력
+                System.out.print(square[i][j]);
+            }
+            System.out.println(); // 한 행이 끝나면 줄바꿈
+        }
     }
     //2-3
     public void Diamond() {

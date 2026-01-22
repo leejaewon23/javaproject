@@ -38,6 +38,7 @@ public class Main {
         ArrayTest2 a2 = new ArrayTest2();
         a2.ArrayDouble();
         a2.ArrayNumber();
+        a2.printSquare();
         a2.Diamond();
 
     }
