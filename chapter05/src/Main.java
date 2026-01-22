@@ -40,6 +40,9 @@ public class Main {
         a2.ArrayNumber();
         a2.printSquare();
         a2.Diamond();
+        a2.ArrayHigh();
+        a2.ArrayHap();
+        a2.ArrayStudents();
 
     }
 }

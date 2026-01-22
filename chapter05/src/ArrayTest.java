@@ -1,5 +1,6 @@
 import java.util.Arrays;
 
+
 public class ArrayTest {
     public void ArrayBoolean() {
         boolean[] boolArray = new boolean[10];

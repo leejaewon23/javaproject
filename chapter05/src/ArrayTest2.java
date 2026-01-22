@@ -120,9 +120,91 @@ public class ArrayTest2 {
             }
         }
     }
+    //5장 연습문제 7번
+    public void ArrayHigh() {
+        int [] array = { 1, 5, 3, 8, 2 };
+        int max = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > max) {
+                max = array[i];
+            }
+        }
+        System.out.println("최댓값은: " + max);
+    }
 
+    //연습문제 8번
+    public void ArrayHap() {
+        int[][] array = {
+                  {95, 86}
+                , {83, 92, 96}
+                , {78, 83, 93, 87, 88}
+        };
+        int hap = 0;
+        int avg = 0;
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                hap += array[i][j];
+            }
+        }
+        System.out.println("전체 합: " + hap);
+        avg = hap / array.length;
+        System.out.println("전체 평균: " + avg);
+    }
 
+    //연습문제 9번
+    public void ArrayStudents() {
+        Scanner scanner = new Scanner(System.in);
+        int studentNum = 0;
+        int[] scores = null;
+        boolean flag = true;
 
+        while (flag) {
+            System.out.println("----------------------------------------------");
+            System.out.println("1.학생 수 | 2.점수입력 | 3.점수리스트 | 4.분석 | 5.종료");
+            System.out.println("----------------------------------------------");
+            System.out.println("선택> ");
+
+            String str =  scanner.nextLine();
+
+            if (str.equals("1")) {
+                System.out.print("학생 수> ");
+                studentNum = Integer.parseInt(scanner.nextLine());
+                scores = new int[studentNum]; // 여기서 배열을 실제 크기만큼 생성
+            }
+            else if (str.equals("2")) {
+                if (scores == null) {
+                    System.out.println("학생 수를 먼저 입력하세요.");
+                    continue;
+                }
+                for (int j = 0; j < scores.length; j++) {
+                    System.out.print("scores[" + j + "]> ");
+                    scores[j] = Integer.parseInt(scanner.nextLine()); // 실제 점수 입력
+                }
+            }
+            else if (str.equals("3")) {
+                for (int j = 0; j < scores.length; j++) {
+                    System.out.println("scores[" + j + "]: " + scores[j]);
+                }
+            }
+            else if (str.equals("4")) {
+                int max = 0;
+                int sum = 0;
+                for (int j = 0; j < scores.length; j++) {
+                    if (max < scores[j]) {
+                        max = scores[j]; // 최댓값 로직
+                    }
+                    sum += scores[j]; // 합계
+                }
+                double avg = (double) sum / studentNum;
+                System.out.println("최고 점수: " + max);
+                System.out.println("평균 점수: " + avg);
+            }
+            else if (str.equals("5")) {
+                System.out.println("프로그램을 종료합니다.");
+                flag = false;
+            }
+        }
+    }
 }
 
 
