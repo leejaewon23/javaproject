@@ -11,5 +11,8 @@ public class Main {
         ex.ComputerExample();
         ex.CarExample4();
         ex.CalculatorExample1();
+        ex.PhoneExample();
+        ex.GameExample();
+        ex.GameExample2();
     }
 }

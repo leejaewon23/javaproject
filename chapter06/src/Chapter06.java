@@ -143,6 +143,63 @@ public class Chapter06 {
         System.out.println("직사각형 넓이=" + result2);
     }
 
+    // 과제2
+    public void PhoneExample() {
+        Phone p1 = new Phone("갤럭시", "S25+", "블랙");
+        System.out.println("브렌드: " + p1.brand);
+        System.out.println("모델: " + p1.model);
+        System.out.println("색상: " + p1.color);
+        System.out.println("------------------");
+
+        Phone p2 = new Phone("아이폰", "14 Pro", "화이트");
+        System.out.println("브렌드: " + p2.brand);
+        System.out.println("모델: " + p2.model);
+        System.out.println("색상: " + p2.color);
+        System.out.println("------------------");
+    }
+
+    //과제3
+    public void GameExample() {
+        Game g1 = new Game("마리오 카트", "액션", "전체 이용", 50000, "https://www.nintendo.com/kr/?srsltid=AfmBOorKeYiGZ5kWJDdGaJq9xJnR1wd8qUABoUKwzwkE4KD7XSEaInYX");
+
+        System.out.println("게임 제목: " + g1.title);
+        System.out.println("장르: " + g1.type);
+        System.out.println("등급: " + g1.limit);
+        System.out.println("가격: " + g1.price + "원");
+        System.out.println("이미지주소: " + g1.address);
+        System.out.println("------------------------");
+
+        Game g2 = new Game("별의 커피", "전략", "전체 이용", 45000, "https://www.nintendo.com/kr/?srsltid=AfmBOorKeYiGZ5kWJDdGaJq9xJnR1wd8qUABoUKwzwkE4KD7XSEaInYX");
+
+        System.out.println("게임 제목: " + g2.title);
+        System.out.println("장르: " + g2.type);
+        System.out.println("등급: " + g2.limit);
+        System.out.println("가격: " + g2.price + "원");
+        System.out.println("이미지주소: " + g2.address);
+    }
+
+    //과제4
+    public void GameExample2() {
+        GameCharactor c1 = new GameCharactor("도적고양이", "도적", "여자", 203, 395, 20210101);
+        System.out.println("------------------------");
+        System.out.println("이름: " + c1.name);
+        System.out.println("직업: " + c1.job);
+        System.out.println("성별: " + c1.sex);
+        System.out.println("HP: " + c1.hp);
+        System.out.println("MP: " + c1.mp);
+        System.out.println("생일: " + c1.birthday);
+
+        GameCharactor c2 = new GameCharactor("신사임걸", "마법사", "여자", 203, 395, 20230801);
+        System.out.println("------------------------");
+        System.out.println("이름: " + c2.name);
+        System.out.println("직업: " + c2.job);
+        System.out.println("성별: " + c2.sex);
+        System.out.println("HP: " + c2.hp);
+        System.out.println("MP: " + c2.mp);
+        System.out.println("생일: " + c2.birthday);
+    }
+
+
 
 }
 
