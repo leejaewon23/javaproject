@@ -155,7 +155,7 @@ public class ArrayTest2 {
     public void ArrayStudents() {
         Scanner scanner = new Scanner(System.in);
         int studentNum = 0;
-        int[] scores = null;
+        int[] scores = null; // null값으로 초기화
         boolean flag = true;
 
         while (flag) {
@@ -172,10 +172,6 @@ public class ArrayTest2 {
                 scores = new int[studentNum]; // 여기서 배열을 실제 크기만큼 생성
             }
             else if (str.equals("2")) {
-                if (scores == null) {
-                    System.out.println("학생 수를 먼저 입력하세요.");
-                    continue;
-                }
                 for (int j = 0; j < scores.length; j++) {
                     System.out.print("scores[" + j + "]> ");
                     scores[j] = Integer.parseInt(scanner.nextLine()); // 실제 점수 입력

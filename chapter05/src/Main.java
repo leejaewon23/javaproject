@@ -44,5 +44,8 @@ public class Main {
         a2.ArrayHap();
         a2.ArrayStudents();
 
+        ArrayFinal a3 = new ArrayFinal();
+        a3.ArrayMonth();
+
     }
 }
