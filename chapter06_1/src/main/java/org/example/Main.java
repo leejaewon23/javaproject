@@ -56,6 +56,39 @@ public class Main {
         } else {
             System.out.println("다른 Singleton 객체입니다.");
         }
+        //13, 14번 문제
+        Member user1  = new Member("홍길동", "hong");
+        System.out.println(user1.name);
+        System.out.println(user1.id);
+        System.out.println("-----------------------------------");
+
+        //15번 문제
+        MemberService memberService = new MemberService();
+        boolean result = memberService.login("hong", "12345");
+        if (result) {
+            System.out.println("로그인 되었습니다.");
+            memberService.logout("hong");
+        } else {
+            System.out.println("id 또는 password가 올바르지 않습니다.");
+        }
+
+        //16번, 17번 문제
+
+        Printer.println(10);
+        Printer.println(true);
+        Printer.println(5.7);
+        Printer.println("홍길동");
+
+        //18번 문제
+        ShopService obj3 = ShopService.getInstance();
+        ShopService obj4 = ShopService.getInstance();
+
+        if(obj3 == obj4) {
+            System.out.println("같은 ShopService 객체입니다.");
+        } else {
+            System.out.println("다른 ShopService 객체입니다.");
+        }
+
 
 
     }
