@@ -199,6 +199,16 @@ public class Chapter06 {
         System.out.println("생일: " + c2.birthday);
     }
 
+    //25.01.26
+    //과제1 chapter06 p245~p277 예제
+    public void Car5Example() {
+        Car5 myCar = new Car5("포르쉐");
+        Car5 myCar2 = new Car5("벤츠");
+
+        myCar.run();
+        myCar2.run();
+    }
+
 
 
 }

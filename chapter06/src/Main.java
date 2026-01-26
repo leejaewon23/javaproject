@@ -14,5 +14,6 @@ public class Main {
         ex.PhoneExample();
         ex.GameExample();
         ex.GameExample2();
+        ex.Car5Example();
     }
 }
