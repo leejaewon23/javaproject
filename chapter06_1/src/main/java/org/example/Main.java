@@ -89,6 +89,27 @@ public class Main {
             System.out.println("다른 ShopService 객체입니다.");
         }
 
+        //19번 문제
+        Account account = new Account();
+
+        account.setBalance(1000);
+        System.out.println("현재 잔고: " + account.getBalance());
+
+        account.setBalance(-100);
+        System.out.println("현재 잔고: " + account.getBalance());
+
+        account.setBalance(2000000);
+        System.out.println("현재 잔고: " + account.getBalance());
+
+        account.setBalance(300000);
+        System.out.println("현재 잔고: " + account.getBalance());
+
+        BankApplication.main(args);
+
+
+
+
+
 
 
     }
