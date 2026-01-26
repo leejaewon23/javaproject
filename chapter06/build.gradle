@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+repositories {
+    mavenCentral()
+}
+dependencies {
+    // 롬복 라이브러리 및 프로세서 설정
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+    // 테스트 환경에서도 롬복 사용을 위해 추가
+    testCompileOnly 'org.projectlombok:lombok:1.18.30'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.30'
+}

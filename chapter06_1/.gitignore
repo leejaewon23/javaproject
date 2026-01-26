@@ -1,7 +1,21 @@
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
 ### IntelliJ IDEA ###
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+.idea/
 
 ### Eclipse ###
 .apt_generated
@@ -27,14 +41,3 @@ bin/
 
 ### Mac OS ###
 .DS_Store
-
-# Gradle 자동 생성 파일 및 폴더
-.gradle/
-build/
-
-# 인텔리제이 설정 파일
-.idea/
-*.iml
-
-# OS 생성 파일
-.DS_Store (맥 사용자용)
