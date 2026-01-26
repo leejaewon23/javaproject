@@ -33,3 +33,11 @@ chapter06/.idea/misc.xml
 chapter06/.idea/modules.xml
 chapter06/.idea/vcs.xml
 chapter06/chapter06.iml
+chapter06_1/settings.gradle
+chapter06_1/gradlew.bat
+chapter06_1/gradlew
+chapter06_1/gradle/wrapper/gradle-wrapper.properties
+chapter06_1/gradle/wrapper/gradle-wrapper.jar
+chapter06/gradlew.bat
+chapter06/gradlew
+chapter06/gradle/wrapper/gradle-wrapper.properties
