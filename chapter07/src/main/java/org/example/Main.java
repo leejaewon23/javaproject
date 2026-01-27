@@ -45,5 +45,25 @@ public class Main {
         parent.method2();
 //      parent.method3(); (호출 불가능)
 
+        // 1. 과목 준비
+        Subject java = new Subject("Java 프로그래밍", 3);
+        Subject spring = new Subject("Spring Framework", 3);
+
+        // 2. 학생 등록
+        Student student = new Student("2022261050", "이재원");
+
+        // 3. 수강 신청
+        student.takeCourse(java);
+        student.takeCourse(spring);
+
+        // 4. 학기 종료 후 성적 입력 (Setter 활용)
+        // 첫 번째 수강 과목(Java)에 A+ 입력
+        student.getGrades().get(0).setScore("A+");
+        // 두 번째 수강 과목(Spring)에 A0 입력
+        student.getGrades().get(1).setScore("A0");
+
+        // 5. 성적표 확인 (Getter 활용)
+        student.showReportCard();
+
         }
     }
