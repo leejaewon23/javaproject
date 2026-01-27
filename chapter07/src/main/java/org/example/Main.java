@@ -16,7 +16,7 @@ public class Main {
         myPhone.sendVoice("아~ 네, 반갑습니다.");
         myPhone.hangUp();
 
-        myPhone.setWifi(true);
+        myPhone.Wifi();
         myPhone.internet();
 
         }

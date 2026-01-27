@@ -14,8 +14,8 @@ public class SmartPhone extends Phone {
         System.out.println("SmartPhone(String model, String color) 생성자 실행됨");
     }
 
-    public void setWifi(boolean wifi) {
-        this.wifi = wifi;
+    public void Wifi() {
+        this.setWifi(true);
         System.out.println("와이파이 상태를 변경했습니다.");
 
     }
