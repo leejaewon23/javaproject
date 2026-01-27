@@ -10,7 +10,7 @@ public class Account2 {
         this.owner = owner;
         this.balance = balance;
     }
-    
+
     public String getAno() { return ano; }
     public String getOwner() { return owner; }
     public int getBalance() { return balance; }
