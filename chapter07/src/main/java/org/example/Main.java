@@ -19,5 +19,31 @@ public class Main {
         myPhone.Wifi();
         myPhone.internet();
 
+        int r = 10;
+        Calculator calculator = new Calculator();
+        System.out.println("원 면적: " + calculator.areaCircle(r));
+        System.out.println();
+
+        Computer computer = new Computer();
+        System.out.println("원 면적: " + computer.areaCircle(r));
+
+        SupersonicAirplane sa = new SupersonicAirplane();
+        sa.takeOff();
+        sa.fly();
+        sa.setFlyMode(2);
+        sa.fly();
+        sa.land();
+
+        //자식 객체 생성
+        Child child = new Child();
+
+        //자동 타입 변환
+        Parent parent = child;
+
+        //메소드 호출
+        parent.method1();
+        parent.method2();
+//      parent.method3(); (호출 불가능)
+
         }
     }
