@@ -65,5 +65,92 @@ public class Main {
         // 5. 성적표 확인 (Getter 활용)
         student.showReportCard();
 
+        //추상 클래스
+        SmartPhone1 smartphone1 = new SmartPhone1("홍길동");
+
+        smartphone1.turnOn();
+        smartphone1.internetSearch();
+        smartphone1.turnOff();
+
+        Car myCar = new Car();
+
+        myCar.setTire(new Tire());
+        myCar.run();
+
+        myCar.setTire(new HankookTire());
+        myCar.run();
+
+        myCar.setTire(new KumhoTire());
+        myCar.run();
+
+        //Driver 객체 생성
+        Driver driver = new Driver();
+
+        //매개값으로 Bus 객체를 제공하고 driver() 메소드 호출
+        Bus bus = new Bus();
+        driver.drive(bus);
+
+        //매개값으로 Taxi 객체를 제공하고 driver() 메소드 호출
+        Taxi taxi = new Taxi();
+        driver.drive(taxi);
+
+        Person p1 = new Person("홍길동");
+        personInfo(p1);
+
+        System.out.println();
+
+        Person p2 = new Student1("김길동", 10);
+        personInfo(p2);
+
+        System.out.println("-------------------------------");
+
+        Dog dog = new Dog();
+        dog.setName("누릉이");
+        dog.setAge(5);
+
+        Cat cat = new Cat();
+        cat.setName("나비");
+        cat.setAge(7);
+
+        dog.breathe();
+        dog.sound();
+
+        cat.breathe();
+        cat.sound();
+
+        System.out.println("\n확인: " + dog.getName() + "는 " + dog.getAge() + "살입니다.");
+
+
+        //매개변수의 다형성
+        animalSound(new Dog());
+        animalSound(new Cat());
+
+        System.out.println("-------------------------------");
+
+        Person1 p = new Person1();
+        Employee e = new Employee();
+        Manager m = new Manager();
+        Director d = new Director();
+
+        p.work();
+        e.work();
+        m.work();
+        d.work();
+
+    }
+    public static void animalSound(Animal animal) {
+        animal.sound();
+    }
+    public static void personInfo(Person person) {
+        System.out.println("name: " + person.getName());
+        person.walk();
+
+        if (person instanceof Student1 student) {
+            System.out.println("studentNo: " + student.getStudentNo());
+            student.study();
+
         }
+    }
+
+
     }
