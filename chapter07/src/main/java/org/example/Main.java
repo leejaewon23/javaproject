@@ -137,6 +137,28 @@ public class Main {
         m.work();
         d.work();
 
+        //개인과제1
+        Rabbit rabbit = new Rabbit();
+        rabbit.eat(rabbit);
+        rabbit.breathe();
+
+        Tiger tiger = new Tiger();
+        tiger.eat(tiger);
+        tiger.breathe();
+
+        Fox fox = new Fox();
+        fox.eat(fox);
+        fox.breathe();
+
+        Swam swam = new Swam();
+        swam.eat(swam);
+        swam.breathe();
+
+
+
+
+
+
     }
     public static void animalSound(Animal animal) {
         animal.sound();
@@ -151,6 +173,8 @@ public class Main {
 
         }
     }
+
+
 
 
     }
